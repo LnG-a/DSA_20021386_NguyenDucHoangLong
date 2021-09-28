@@ -1,7 +1,7 @@
 import edu.princeton.cs.algs4.*;
 import static java.util.Arrays.sort;
 
-public class Sum_3 {
+public class ThreeSum_2 {
     public static void main(String[] args) {
         In in = new In("D:\\E-Learning\\CTDLGT\\algs4-data\\32Kints.txt");
         int[] a = in.readAllInts();
@@ -11,9 +11,7 @@ public class Sum_3 {
     static void findTriplets(int[] arr, int n)
     {
         boolean found = false;
-
         sort(arr);
-
         for (int i=0; i<n-1; i++)
         {
             while (i>0&&arr[i]==arr[i-1]) {
@@ -36,10 +34,7 @@ public class Sum_3 {
                 else r--;
             }
         }
-
         if (!found)
             System.out.println(" No Triplet Found");
     }
 }
-//javac -cp D:\E-Learning\CTDLGT\algs4.jar;. Sum_3.java
-//java -cp D:\E-Learning\CTDLGT\algs4.jar;. Sum_3

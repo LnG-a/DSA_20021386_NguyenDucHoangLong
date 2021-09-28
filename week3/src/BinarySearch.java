@@ -20,7 +20,7 @@ public class BinarySearch {
     }
 
     /**
-     * This method is used to find index of a number in an array
+     * This method is used to find index of a number in an array.
      *
      * @param a      an array of int in ascending order
      * @param number an int variable that you want to find
