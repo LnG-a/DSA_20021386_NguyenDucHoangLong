@@ -14,10 +14,6 @@ public class ThreeSum_2 {
         sort(arr);
         for (int i=0; i<n-1; i++)
         {
-            while (i>0&&arr[i]==arr[i-1]) {
-                i++;
-                continue;
-            }
             int l = i + 1;
             int r = n - 1;
             int x = arr[i];
@@ -26,7 +22,6 @@ public class ThreeSum_2 {
                     System.out.print(x + " ");
                     System.out.print(arr[l] + " ");
                     System.out.println(arr[r] + " ");
-
                     l++;
                     r--;
                     found = true;

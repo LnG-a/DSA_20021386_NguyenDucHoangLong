@@ -59,7 +59,6 @@ public class ThreeSum {
         int count = count(a);
         StdOut.println("elapsed time = " + timer.elapsedTime());
         StdOut.println(count);
-        printAll(a);
     }
 }
 
