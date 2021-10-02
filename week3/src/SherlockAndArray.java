@@ -14,6 +14,7 @@ public class SherlockAndArray {
 
     /**
      * This method check if there is a number that it's sum of left elements equal to the right one.
+     * Complexity O(N)
      *
      * @param arr an array of int
      * @return  YES if there is a number that it's sum of left elements equal to the right one
@@ -29,6 +30,31 @@ public class SherlockAndArray {
             sumRight -= arr.get(i);
             if (sumLeft == sumRight) return "YES";
             sumLeft += arr.get(i);
+        }
+        return "NO";
+    }
+
+    /**
+     * This method check if there is a number that it's sum of left elements equal to the right one.
+     * Complexity O(N^2)
+     *
+     * @param arr an array of int
+     * @return  YES if there is a number that it's sum of left elements equal to the right one
+     *          NO if there is not.
+     */
+    public static String checkSum2(List<Integer> arr) {
+        for (int i=0;i< arr.size();i++){
+            long sumLeft=0;
+            long sumRight=0;
+            for (int j=0; j<i;j++){
+                sumLeft+=arr.get(j);
+            }
+            for (int j=i+1;j< arr.size();j++){
+                sumRight+= arr.get(j);
+            }
+            if (sumLeft==sumRight){
+                return "YES";
+            }
         }
         return "NO";
     }

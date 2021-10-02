@@ -5,17 +5,22 @@ public class ThreeSum_2 {
     public static void main(String[] args) {
         In in = new In("D:\\E-Learning\\CTDLGT\\algs4-data\\32Kints.txt");
         int[] a = in.readAllInts();
-        findTriplets(a,a.length);
+        findTriplets(a);
     }
 
-    static void findTriplets(int[] arr, int n)
+    /**
+     * This method finds all three sum-equal-0 numbers.
+     * Complexity O(N^2)
+     * @param arr an int array
+     */
+    static void findTriplets(int[] arr)
     {
         boolean found = false;
         sort(arr);
-        for (int i=0; i<n-1; i++)
+        for (int i=0; i< arr.length-1; i++)
         {
             int l = i + 1;
-            int r = n - 1;
+            int r = arr.length - 1;
             int x = arr[i];
             while (l < r) {
                 if (x + arr[l] + arr[r] == 0) {
