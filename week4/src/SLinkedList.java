@@ -67,6 +67,9 @@ public class SLinkedList {
 
     }
 
+    /**
+     * This method reverses the LinkedList.
+     */
     public void reverse(){
         reverse(head);
     }
