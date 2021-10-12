@@ -7,8 +7,7 @@ public class SLinkedList {
      * @param data the data of new Node
      */
     public void addFirst(int data) {
-        if (this.head == null) this.head = new Node(data, null);
-        else this.head = new Node(data, this.head);
+        this.head = new Node(data, this.head);
     }
 
     /**
@@ -31,36 +30,43 @@ public class SLinkedList {
      * This method deletes head Node.
      */
     public void deleteFirst() {
-        if (head!=null) head=head.next;
+        if (head != null) head = head.next;
     }
 
     /**
      * This method deltes the tail Node.
      */
     public void deleteLast() {
-        if (head==null) return;
-        if (head.next==null) {
+        if (head == null) return;
+        if (head.next == null) {
             deleteFirst();
             return;
         }
         Node current = head;
-        while (current.next.next!=null) current=current.next;
-        current.next=null;
+        while (current.next.next != null) current = current.next;
+        current.next = null;
     }
 
     /**
      * This methdo deletes Node has specific position.
+     *
      * @param index the position of the Node.
      */
     public void delete(int index) {
-        if (index==0) {
+        if (index == 0) {
             deleteFirst();
             return;
         }
         Node current = head;
-        for (int i=1;i<index;i++) current = current.next;
-        if (current != null && current.next!=null) {
-            current.next=current.next.next;
+        for (int i = 1; i < index; i++) {
+            if (current.next == null) {
+                System.out.println("Invalid index");
+                return;
+            }
+            current = current.next;
+        }
+        if (current != null && current.next != null) {
+            current.next = current.next.next;
         } else {
             System.out.println("Invalid index");
         }
@@ -70,19 +76,20 @@ public class SLinkedList {
     /**
      * This method reverses the LinkedList.
      */
-    public void reverse(){
+    public void reverse() {
         reverse(head);
     }
 
-    private void reverse(Node start){
-        if(start==null||start.next==null){
-            head=start;
+    private void reverse(Node start) {
+        if (start == null || start.next == null) {
+            head = start;
             return;
         }
         reverse(start.next);
-        start.next.next=start;
-        start.next=null;
+        start.next.next = start;
+        start.next = null;
     }
+
     /**
      * This method print all Nodes in LinkedList
      */

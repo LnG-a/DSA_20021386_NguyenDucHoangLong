@@ -15,7 +15,7 @@ public class ClosestNumber {
 
     /**
      * This method finds pairs of numbers which have the smallest absolute difference.'
-     * Complexity o(N)
+     * Complexity O(2N)
      *
      * @param arr an array of int
      * @return list of pairs
@@ -41,7 +41,7 @@ public class ClosestNumber {
 
     /**
      * This method finds pairs of numbers which have the smallest absolute difference.'
-     * Complexity o(N^2/2)
+     * Complexity O(N^2/2)
      *
      * @param arr an array of int
      * @return list of pairs
