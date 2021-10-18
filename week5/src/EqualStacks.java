@@ -17,22 +17,22 @@ public class EqualStacks {
         int dem1=0;
         int dem2=0;
         int dem3=0;
-        while (sum1!=sum2&&sum2!=sum3){
-            long max=Math.max(sum1,Math.max(sum2,sum3));
-            if (sum1==max){
+        while (sum1>0&&sum2>0&&sum3>0){
+            if (sum1>sum2||sum1>sum3){
                 sum1-=h1.get(dem1);
                 dem1++;
             }
-            if (sum2==max){
+            if (sum2>sum1||sum2>sum3){
                 sum2-=h2.get(dem2);
                 dem2++;
             }
-            if (sum3==max){
+            if (sum3>sum1||sum3>sum2){
                 sum3-=h3.get(dem3);
                 dem3++;
             }
+            if(sum1==sum2&&sum1==sum3) return (int) sum1;
         }
-        return (int)sum1;
+        return 0;
     }
 
     private static long sum(List<Integer> list){

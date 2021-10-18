@@ -33,7 +33,8 @@ public class SimpleTextEditor {
                     this.delete(k);
                     break;
                 case '3':
-                    this.print();
+                    int j=(int) ops[i].charAt(2)-48;
+                    this.print(j);
                     break;
                 case '4':
                     this.undo();
@@ -54,8 +55,8 @@ public class SimpleTextEditor {
         this.history.push(this.s);
     }
 
-    private void print(){
-        System.out.println(this.s);
+    private void print(int j){
+        System.out.println(this.s.charAt(j));
     }
 
     private void undo(){
@@ -71,7 +72,5 @@ public class SimpleTextEditor {
         SimpleTextEditor a=new SimpleTextEditor("abcde");
         String[] b={"3","1 fg","3","2 2","3","4","3","4","3"};
         a.operation(b);
-
-
     }
 }

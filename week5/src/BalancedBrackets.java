@@ -27,6 +27,7 @@ public class BalancedBrackets {
                 }
             }
         }
+        if(!myStack.isEmpty()) return "NO";
         return "YES";
     }
 
