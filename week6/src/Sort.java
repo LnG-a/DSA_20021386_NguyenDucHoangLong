@@ -27,6 +27,12 @@ public class Sort {
         System.out.println(tong/n+"ms");
     }
 
+    /**
+     * Complexity O(N^2).
+     * No worst case or best case.
+     *
+     * @param a int array
+     */
     public static void selectionSort(int[] a) {
         for (int i = 0; i < a.length; i++) {
             int min = i;
@@ -37,6 +43,14 @@ public class Sort {
         }
     }
 
+    /**
+     * Complexity O(N^2).
+     * Space: 2*N.
+     * Worst case: Reversed Sorted Array.
+     * Best case: Sorted Array (N-1).
+     *
+     * @param a int array
+     */
     public static void insertionSort(int[] a) {
         for (int i = 0; i < a.length; i++) {
             for (int j = i; j > 0; j--) {
@@ -55,6 +69,12 @@ public class Sort {
         a[j] = exchange;
     }
 
+    /**
+     * Complexity O(NlogN)
+     * No worst case or best case
+     *
+     * @param a int array
+     */
     public static void mergeSort(int[] a) {
         int[] aux = new int[a.length];
         sort(a, aux, 0, a.length - 1);
@@ -88,6 +108,13 @@ public class Sort {
         }
     }
 
+    /**
+     * Complexity average O(NlogN)
+     * Worst case: Sorted Array: O(N^2)
+     * Best case: Pivot is in middle of array O(NlogN)
+     *
+     * @param a int array
+     */
     public static void quickSort(int[] a) {
         StdRandom.shuffle(a);
         sort(a, 0, a.length - 1);

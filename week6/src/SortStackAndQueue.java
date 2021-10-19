@@ -2,6 +2,13 @@ import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.Stack;
 
 public class SortStackAndQueue {
+    /**
+     * Complexity O(N^2/2)
+     * Worst case: Reversed Sorted Stack
+     * Best case: Sorted Stack
+     *
+     * @param stack a stack
+     */
     public static void sortStack(Stack<Integer> stack){
         if (!stack.isEmpty()) {
             int temp = stack.pop();
@@ -19,6 +26,12 @@ public class SortStackAndQueue {
         }
     }
 
+    /**
+     * Complexity O(N^2/2).
+     * No worst case or best case.
+     *
+     * @param queue a queue
+     */
     public static void sortQueue(Queue<Integer>  queue){
         if (!queue.isEmpty()){
             int temp= queue.dequeue();
@@ -33,12 +46,10 @@ public class SortStackAndQueue {
         } else if (element<queue.peek()){
             queue.enqueue(element);
             for (int i=0;i<size;i++){
-                queue.enqueue(queue.peek());
-                queue.dequeue();
+                queue.enqueue(queue.dequeue());
             }
         } else {
-            queue.enqueue(queue.peek());
-            queue.dequeue();
+            queue.enqueue(queue.dequeue());
             queueAscending(queue,element,size-1);
         }
     }
