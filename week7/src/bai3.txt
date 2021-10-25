@@ -1,0 +1,6 @@
+Trong hai thuật toán sắp xếp Chọn (Insertion sort) và Chèn/Xen vào (Selection Sort),
+dữ liệu đầu vào có nên lưu trong LinkedList (danh sách liên kết) không ?
+Vì sao ?
+
+Insertion: nên vì Insertion chỉ thay đổi giá trị những node liền kề.
+Selection: không vì truy cập một phần tử tốn nhiều bước.

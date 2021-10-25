@@ -1,5 +1,4 @@
 import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.Insertion;
 import edu.princeton.cs.algs4.StdRandom;
 
 public class Sort {
@@ -20,7 +19,7 @@ public class Sort {
                 b[i]=a[i];
             }
             start = System.currentTimeMillis();
-            selectionSort(b);
+            quickSort(b);
             end = System.currentTimeMillis();
             tong+=(end-start);
         }
@@ -117,7 +116,8 @@ public class Sort {
      */
     public static void quickSort(int[] a) {
         StdRandom.shuffle(a);
-        sort(a, 0, a.length - 1);
+        //sort(a, 0, a.length - 1);
+        partition(a,0,a.length-1);
     }
 
     private static int partition(int[] a, int lo, int hi) {
@@ -136,14 +136,9 @@ public class Sort {
             exchange(a, i, j);
         }
         exchange(a, lo, j);
+        partition(a, lo, j - 1);
+        partition(a, j + 1, hi);
         return j;
-    }
-
-    private static void sort(int[] a, int lo, int hi) {
-        if (hi <= lo) return;
-        int j = partition(a, lo, hi);
-        sort(a, lo, j - 1);
-        sort(a, j + 1, hi);
     }
 }
 /*
