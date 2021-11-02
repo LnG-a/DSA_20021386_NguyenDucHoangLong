@@ -1,16 +1,34 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
-public class QuickSortInPlace {
+public class Main {
+
     public static void main(String[] args) {
-        Scanner a= new Scanner(System.in);
-        List<Integer> arr= new ArrayList<>();
-        int n =a.nextInt();
-        for (int i=0;i<n;i++){
-            arr.add(a.nextInt());
+        List<Integer> a= new ArrayList<>();
+        for (int i=0;i<10;i++){
+            a.add(10-i);
         }
-        quickSort(arr,0,arr.size()-1);
+        quickSort(a,0,a.size()-1);
+        print(a);
+    }
+
+    private static int find (List<Integer> a, int low, int high){
+        if (high>low&&high<a.size()){
+            int pivot = a.get(high);
+            int i=low;
+            for (int j=low;j<high;j++){
+                if (a.get(j)<pivot){
+                    exchange(a,i,j);
+                    i++;
+                }
+            }
+            exchange(a,i,high);
+            print(a);
+            if (i<a.size()/2) return find(a, low, i - 1);
+            else if (i>a.size()/2) return find(a, i + 1, high);
+            else return i;
+        }
+        return high;
     }
 
     public static void quickSort (List<Integer> a, int low, int high){
@@ -24,7 +42,6 @@ public class QuickSortInPlace {
                 }
             }
             exchange(a,i,high);
-            print(a);
             //System.out.println("low="+ a.get(low)+" high="+a.get(high));
             quickSort(a,low,i-1);
             quickSort(a,i+1,high);
