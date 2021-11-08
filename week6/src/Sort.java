@@ -7,23 +7,9 @@ public class Sort {
         In myIn1 = new In("100kDescending.txt");
         In myIn2 = new In("100kRandom.txt");
         In myIn3 = new In("100kFewUnique.txt");
-        long start;
-        long end;
-        double tong=0;
 
         int[] a = myIn.readAllInts();
-        int[] b=new int[a.length];
-        int n =5;
-        for (int j=0;j<n;j++){
-            for (int i=0;i<a.length;i++){
-                b[i]=a[i];
-            }
-            start = System.currentTimeMillis();
-            quickSort(b);
-            end = System.currentTimeMillis();
-            tong+=(end-start);
-        }
-        System.out.println(tong/n+"ms");
+        quickSort(a);
     }
 
     /**
