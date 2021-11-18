@@ -72,7 +72,7 @@ public class MaxTreeHeap {
     }
 
     private void swim(Node newNode) {
-        while (newNode.parent != null) {
+        while (newNode != root) {
             if (newNode.value > newNode.parent.value) {
                 swap(newNode, newNode.parent);
                 newNode = newNode.parent;
