@@ -12,6 +12,7 @@ public class MaxTreeHeap {
             this.value = value;
         }
     }
+    
 
     public void insert(int number) {
         if (root == null) root = new Node(number);

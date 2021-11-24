@@ -3,13 +3,7 @@ import edu.princeton.cs.algs4.StdRandom;
 
 public class Sort {
     public static void main(String[] args) {
-        In myIn = new In("100kAscending.txt");
-        In myIn1 = new In("100kDescending.txt");
-        In myIn2 = new In("100kRandom.txt");
-        In myIn3 = new In("100kFewUnique.txt");
 
-        int[] a = myIn.readAllInts();
-        quickSort(a);
     }
 
     /**
@@ -126,6 +120,8 @@ public class Sort {
         partition(a, j + 1, hi);
         return j;
     }
+
+
 }
 /*
 * Time (ms)
