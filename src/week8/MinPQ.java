@@ -1,3 +1,5 @@
+package week8;
+
 import edu.princeton.cs.algs4.*;
 
 import java.util.Comparator;
@@ -235,7 +237,7 @@ public class MinPQ<Key> implements Iterable<Key> {
     }
 
     /**
-     * Unit tests the {@code MinPQ} data type.
+     * Unit tests the {@code week8.MinPQ} data type.
      *
      * @param args the command-line arguments
      */

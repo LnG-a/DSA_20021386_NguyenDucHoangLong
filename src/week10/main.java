@@ -1,3 +1,5 @@
+package week10;
+
 public class main {
     public static class Node {
         int data;

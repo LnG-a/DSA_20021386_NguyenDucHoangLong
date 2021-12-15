@@ -1,3 +1,5 @@
+package week14;
+
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
@@ -184,7 +186,7 @@ public class ST<Key extends Comparable<Key>, Value> implements Iterable<Key> {
     }
 
     /**
-     * Unit tests the {@code ST} data type.
+     * Unit tests the {@code week14.ST} data type.
      *
      * @param args the command-line arguments
      */

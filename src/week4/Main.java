@@ -1,4 +1,6 @@
-import java.util.Scanner;
+package week4;
+
+import week5.SLinkedList;
 
 public class Main {
     public static void main(String[] args) {

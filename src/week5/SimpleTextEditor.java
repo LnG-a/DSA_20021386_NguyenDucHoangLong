@@ -1,3 +1,5 @@
+package week5;
+
 public class SimpleTextEditor {
     private String s;
     private Stack history =new Stack();

@@ -1,3 +1,5 @@
+package week5;
+
 public class LinkedListQueue {
     private SLinkedList queue= new SLinkedList();
 

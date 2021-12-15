@@ -1,3 +1,5 @@
+package week3;
+
 import edu.princeton.cs.algs4.*;
 import static java.util.Arrays.sort;
 

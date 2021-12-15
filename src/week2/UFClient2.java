@@ -1,3 +1,5 @@
+package week2;
+
 import edu.princeton.cs.algs4.*;
 
 
@@ -27,5 +29,5 @@ public class UFClient2 {
 
 }
 //javac -cp D:\E-Learning\CTDLGT\algs4.jar;. UFCLient2.java
-//java -cp D:\E-Learning\CTDLGT\algs4.jar;. UFClient2
-//java -cp D:\E-Learning\CTDLGT\algs4.jar;. UFClient2 <D:\E-Learning\CTDLGT\algs4-data\tinyUF.txt
+//java -cp D:\E-Learning\CTDLGT\algs4.jar;. week2.UFClient2
+//java -cp D:\E-Learning\CTDLGT\algs4.jar;. week2.UFClient2 <D:\E-Learning\CTDLGT\algs4-data\tinyUF.txt

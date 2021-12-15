@@ -1,3 +1,5 @@
+package week7;
+
 import java.util.List;
 
 public class FindTheMedian {

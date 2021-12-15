@@ -1,9 +1,11 @@
+package week9;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class main {
     public static void main(String[] args) {
-        /*MaxTreeHeap a= new MaxTreeHeap();
+        /*week9.MaxTreeHeap a= new week9.MaxTreeHeap();
         a.insert(1);
         a.insert(3);
         a.insert(2);

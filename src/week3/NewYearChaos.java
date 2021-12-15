@@ -1,3 +1,5 @@
+package week3;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,7 +12,7 @@ public class NewYearChaos {
     }
 
     /**
-     * This method resolve NewYearChaos algorithm.
+     * This method resolve week3.NewYearChaos algorithm.
      * Complexity(N^2)
      *
      * @param arr an int list
@@ -32,7 +34,7 @@ public class NewYearChaos {
     }
 
     /**
-     * This method resolve NewYearChaos algorithm.
+     * This method resolve week3.NewYearChaos algorithm.
      * Complexity(N^2)
      *
      * @param arr an int list

@@ -1,3 +1,5 @@
+package week10;
+
 public class IsThisABST {
     Node root;
     public static class Node {

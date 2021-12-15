@@ -1,3 +1,5 @@
+package week10;
+
 public class LowestCommonAncestor {
     private class Node {
         int data;

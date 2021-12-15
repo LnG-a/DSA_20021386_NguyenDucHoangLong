@@ -1,10 +1,12 @@
+package week5;
+
 import edu.princeton.cs.algs4.*;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- *  The {@code Queue} class represents a first-in-first-out (FIFO)
+ *  The {@code week5.Queue} class represents a first-in-first-out (FIFO)
  *  queue of generic items.
  *  It supports the usual <em>enqueue</em> and <em>dequeue</em>
  *  operations, along with methods for peeking at the first item,
@@ -71,7 +73,7 @@ public class Queue<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this queue is empty
      */
     public Item peek() {
-        if (isEmpty()) throw new NoSuchElementException("Queue underflow");
+        if (isEmpty()) throw new NoSuchElementException("week5.Queue underflow");
         return first.item;
     }
 
@@ -97,7 +99,7 @@ public class Queue<Item> implements Iterable<Item> {
      * @throws NoSuchElementException if this queue is empty
      */
     public Item dequeue() {
-        if (isEmpty()) throw new NoSuchElementException("Queue underflow");
+        if (isEmpty()) throw new NoSuchElementException("week5.Queue underflow");
         Item item = first.item;
         first = first.next;
         n--;
@@ -149,7 +151,7 @@ public class Queue<Item> implements Iterable<Item> {
 
 
     /**
-     * Unit tests the {@code Queue} data type.
+     * Unit tests the {@code week5.Queue} data type.
      *
      * @param args the command-line arguments
      */
@@ -166,5 +168,5 @@ public class Queue<Item> implements Iterable<Item> {
     }
 }
 
-//javac -cp D:\E-Learning\CTDLGT\algs4.jar;. Queue.java
-//java -cp D:\E-Learning\CTDLGT\algs4.jar;. Queue <D:\E-Learning\CTDLGT\algs4-data\stackAndQueue.txt
+//javac -cp D:\E-Learning\CTDLGT\algs4.jar;. week5.Queue.java
+//java -cp D:\E-Learning\CTDLGT\algs4.jar;. week5.Queue <D:\E-Learning\CTDLGT\algs4-data\stackAndQueue.txt

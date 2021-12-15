@@ -1,3 +1,5 @@
+package week8;
+
 public class JavaStringReverse {
     static public boolean palindrome(String a){
         if (a==null) return true;

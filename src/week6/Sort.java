@@ -1,3 +1,5 @@
+package week6;
+
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdRandom;
 
@@ -126,7 +128,7 @@ public class Sort {
 /*
 * Time (ms)
 *
-*       |           |Selection sort |Insertion sort |  Merge sort   |  Quick sort   |
+*       |           |Selection sort |week6.Insertion sort |  Merge sort   |  Quick sort   |
 * data  |   type    |               |               |               |               |
 * 1k    |Ascending  |     4.6       |     0.0       |     0.4       |     2.6       |
 *       |Descending |     5.2       |     9.8       |     0.6       |     2.8       |

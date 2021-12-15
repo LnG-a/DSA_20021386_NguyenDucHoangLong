@@ -1,3 +1,5 @@
+package week10;
+
 import edu.princeton.cs.algs4.*;
 
 import java.util.NoSuchElementException;

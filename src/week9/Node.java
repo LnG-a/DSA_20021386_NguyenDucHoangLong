@@ -1,6 +1,4 @@
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+package week9;
 
 public class Node {
     public int data;
@@ -13,7 +11,7 @@ public class Node {
     public boolean tempBool2;
     public int tempInt1; // Hai biến tạm kiểu int có thể dùng cho bất kỳ mục đích gì
     public int tempInt2;
-    public Node tempNode1; // Hai biến tạm kiểu Node có thể dùng cho bất kỳ mục đích gì
+    public Node tempNode1; // Hai biến tạm kiểu week9.Node có thể dùng cho bất kỳ mục đích gì
     public Node tempNode2;
 
     public Node(int data, Node parent, Node left, Node right) {

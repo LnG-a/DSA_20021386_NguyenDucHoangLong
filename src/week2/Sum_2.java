@@ -1,3 +1,5 @@
+package week2;
+
 import edu.princeton.cs.algs4.*;
 import static java.util.Arrays.sort;
 
@@ -21,5 +23,5 @@ public class Sum_2 {
         }
     }
 }
-//javac -cp D:\E-Learning\CTDLGT\algs4.jar;. Sum_2.java
-//java -cp D:\E-Learning\CTDLGT\algs4.jar;. Sum_2
+//javac -cp D:\E-Learning\CTDLGT\algs4.jar;. week2.Sum_2.java
+//java -cp D:\E-Learning\CTDLGT\algs4.jar;. week2.Sum_2

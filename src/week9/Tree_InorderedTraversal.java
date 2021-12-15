@@ -1,3 +1,5 @@
+package week9;
+
 public class Tree_InorderedTraversal {
     class Node {
         int data;

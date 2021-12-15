@@ -1,3 +1,5 @@
+package week7;
+
 public class PriorityQueue {
     int[] a=new int[100];
     int dem=0;

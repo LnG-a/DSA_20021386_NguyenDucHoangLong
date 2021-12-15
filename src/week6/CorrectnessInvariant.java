@@ -1,3 +1,5 @@
+package week6;
+
 public class CorrectnessInvariant {
     public static void insertionSort(int[] A) {
         for (int i = 1; i < A.length; i++) {

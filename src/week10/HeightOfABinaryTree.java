@@ -1,3 +1,5 @@
+package week10;
+
 public class HeightOfABinaryTree {
     private class Node{
         int data;

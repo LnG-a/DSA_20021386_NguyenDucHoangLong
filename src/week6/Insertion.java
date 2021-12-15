@@ -1,3 +1,5 @@
+package week6;
+
 import java.util.List;
 
 public class Insertion {

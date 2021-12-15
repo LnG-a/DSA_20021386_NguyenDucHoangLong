@@ -1,3 +1,5 @@
+package week5;
+
 public class Queue2Stacks {
     private Stack sEnqueue=new Stack();
     private Stack sDequeue=new Stack();
@@ -28,7 +30,7 @@ public class Queue2Stacks {
         if (!this.sDequeue.isEmpty()){
             this.sDequeue.pop();
         } else {
-            System.out.println("Queue is empty");
+            System.out.println("week5.Queue is empty");
         }
     }
 
@@ -39,7 +41,7 @@ public class Queue2Stacks {
        if(!this.sDequeue.isEmpty()){
            System.out.println(this.sDequeue);
        }else {
-           System.out.println("Queue is empty");
+           System.out.println("week5.Queue is empty");
        }
     }
 

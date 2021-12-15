@@ -1,3 +1,5 @@
+package week2;
+
 import edu.princeton.cs.algs4.*;
 import static java.util.Arrays.sort;
 
@@ -41,5 +43,5 @@ public class Sum_3 {
             System.out.println(" No Triplet Found");
     }
 }
-//javac -cp D:\E-Learning\CTDLGT\algs4.jar;. Sum_3.java
-//java -cp D:\E-Learning\CTDLGT\algs4.jar;. Sum_3
+//javac -cp D:\E-Learning\CTDLGT\algs4.jar;. week2.Sum_3.java
+//java -cp D:\E-Learning\CTDLGT\algs4.jar;. week2.Sum_3

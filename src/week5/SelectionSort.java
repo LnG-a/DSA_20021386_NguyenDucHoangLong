@@ -1,3 +1,5 @@
+package week5;
+
 import edu.princeton.cs.algs4.In;
 
 public class SelectionSort {

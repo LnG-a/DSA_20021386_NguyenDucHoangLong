@@ -1,3 +1,4 @@
+package week11;
 
 import edu.princeton.cs.algs4.LinearProbingHashST;
 import edu.princeton.cs.algs4.SeparateChainingHashST;

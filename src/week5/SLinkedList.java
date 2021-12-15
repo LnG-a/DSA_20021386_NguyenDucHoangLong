@@ -1,3 +1,5 @@
+package week5;
+
 public class SLinkedList {
     private Node head;
 
@@ -10,18 +12,18 @@ public class SLinkedList {
     }
 
     /**
-     * This method adds a new Node at head of LinkedList.
+     * This method adds a new week9.Node at head of LinkedList.
      *
-     * @param data the data of new Node
+     * @param data the data of new week9.Node
      */
     public void addFirst(int data) {
         this.head = new Node(data, this.head);
     }
 
     /**
-     * This method adds a new Node at tail of LinkedList.
+     * This method adds a new week9.Node at tail of LinkedList.
      *
-     * @param data the data of new Node
+     * @param data the data of new week9.Node
      */
     public void addLast(int data) {
         if (this.head == null) addFirst(data);
@@ -35,14 +37,14 @@ public class SLinkedList {
     }
 
     /**
-     * This method deletes head Node.
+     * This method deletes head week9.Node.
      */
     public void deleteFirst() {
         if (head != null) head = head.next;
     }
 
     /**
-     * This method deltes the tail Node.
+     * This method deltes the tail week9.Node.
      */
     public void deleteLast() {
         if (head == null) return;
@@ -56,9 +58,9 @@ public class SLinkedList {
     }
 
     /**
-     * This methdo deletes Node has specific position.
+     * This methdo deletes week9.Node has specific position.
      *
-     * @param index the position of the Node.
+     * @param index the position of the week9.Node.
      */
     public void delete(int index) {
         if (index == 0) {

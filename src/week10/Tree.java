@@ -1,3 +1,5 @@
+package week10;
+
 import edu.princeton.cs.algs4.In;
 
 import java.util.ArrayList;
@@ -27,7 +29,7 @@ public class Tree {
 
         @Override
         public String toString() {
-            return "Node{" +
+            return "week9.Node{" +
                     "data=" + data +
                     '}';
         }

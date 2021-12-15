@@ -1,3 +1,5 @@
+package week10;
+
 public class SelfBalancingTree {
     static class Node{
         int val;	//Value
@@ -7,9 +9,9 @@ public class SelfBalancingTree {
 
     }
 /*
-    static Node insert(Node root,int val) {
+    static week9.Node insert(week9.Node root,int val) {
         if (root==null) {
-            Node newNode=new Node();
+            week9.Node newNode=new week9.Node();
             newNode.val=val;
             return newNode;
         }

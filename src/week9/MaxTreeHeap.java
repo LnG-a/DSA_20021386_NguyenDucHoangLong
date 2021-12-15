@@ -1,3 +1,5 @@
+package week9;
+
 public class MaxTreeHeap {
     private Node root;
     private int size = 0;
@@ -108,8 +110,8 @@ public class MaxTreeHeap {
         System.out.print(") ");
     }
 
-    /*public static void main(String[] args) {
-        MaxTreeHeap a = new MaxTreeHeap();
+    /*public static void week14.week5.main(String[] args) {
+        week9.MaxTreeHeap a = new week9.MaxTreeHeap();
         for (int i = 0; i < 10; i++) {
 
             a.insert(i);

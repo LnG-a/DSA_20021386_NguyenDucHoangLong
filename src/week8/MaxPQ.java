@@ -1,3 +1,5 @@
+package week8;
+
 import edu.princeton.cs.algs4.*;
 
 import java.util.Comparator;
@@ -5,7 +7,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 /**
- *  The {@code MaxPQ} class represents a priority queue of generic keys.
+ *  The {@code week8.MaxPQ} class represents a priority queue of generic keys.
  *  It supports the usual <em>insert</em> and <em>delete-the-maximum</em>
  *  operations, along with methods for peeking at the maximum key,
  *  testing if the priority queue is empty, and iterating through
@@ -269,7 +271,7 @@ public class MaxPQ<Key> implements Iterable<Key> {
     }
 
     /**
-     * Unit tests the {@code MaxPQ} data type.
+     * Unit tests the {@code week8.MaxPQ} data type.
      *
      * @param args the command-line arguments
      */

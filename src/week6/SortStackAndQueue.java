@@ -1,3 +1,5 @@
+package week6;
+
 import edu.princeton.cs.algs4.Queue;
 import edu.princeton.cs.algs4.Stack;
 
