@@ -1,5 +1,7 @@
 package week5;
 
+import java.util.Stack;
+
 public class Queue2Stacks {
     private Stack sEnqueue=new Stack();
     private Stack sDequeue=new Stack();

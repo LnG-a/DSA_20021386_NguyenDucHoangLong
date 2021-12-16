@@ -1,5 +1,7 @@
 package week5;
 
+import java.util.Stack;
+
 public class SimpleTextEditor {
     private String s;
     private Stack history =new Stack();

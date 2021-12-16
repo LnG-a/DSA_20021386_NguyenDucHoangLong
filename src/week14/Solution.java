@@ -10,10 +10,33 @@ public class Solution {
         /*String s1="abcaaa";
         String s2="aecbaacd";
         System.out.println(dynamicLcs(s1,s2));*/
-        int[] N = new int[]{1,0,2,2,4,1};
+        /*int[] N = new int[]{1,0,2,2,4,1};
         int v=83;
-        System.out.println(dynamicATM(N,v));
+        System.out.println(dynamicATM(N,v));*/
+        int[] V = new int[]{1000,1500,2000};
+        int[] W= new int[]{1,2,3};
+        int m=3;
+        System.out.println(dynamicKnapsack(3,V,W,m));
     }
+
+    public static int recursiveKnapsack(int n, int[] V, int[] W,int m){
+        if (n==0) return 0;
+        if (m>=W[n-1]) return Math.max(V[n-1]+recursiveKnapsack(n-1,V,W,m-W[n-1]),recursiveKnapsack(n-1,V,W,m));
+        else return recursiveKnapsack(n-1,V,W,m);
+    }
+
+    public static int dynamicKnapsack(int n, int[] V, int[] W,int m) {
+        int[][] matrix= new int[n+1][m+1];
+        for (int i=0;i<n+1;i++){
+            for (int j=0;j<m+1;j++){
+                if (i==0||j==0) matrix[i][j]=0;
+                else if (j>=W[i-1]) matrix[i][j]=Math.max(matrix[i-1][j],V[i-1] + matrix[i-1][j-W[i-1]]);
+                else matrix[i][j]=matrix[i-1][j];
+            }
+        }
+        return matrix[n][m];
+    }
+
     // 1 2 5 10 20 50
     public static int recursiveATM(int[] N,int v){
         int chooseMoney=N.length-1;
